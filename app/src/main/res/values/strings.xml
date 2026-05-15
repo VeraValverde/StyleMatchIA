@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StyleMatchIA</string>
+    <string name="default_web_client_id">906441351164-7cv0q45f26olombefmrtiv7mircgo783.apps.googleusercontent.com</string>
+    <string name="google_sign_in_error">No se pudo iniciar sesion con Google.</string>
+</resources>

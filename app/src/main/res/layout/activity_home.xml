@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingStart="18dp"
+    android:paddingTop="18dp"
+    android:paddingEnd="18dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_rounded"
+            android:hint="Buscar prendas, marcas..."
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_outline_black"
+            android:text="⌕"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnChipTodo"
+                style="@style/ChipOutlineButton"
+                android:text="Todo"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btnChipCamisetas"
+                style="@style/ChipOutlineButton"
+                android:text="Camisetas"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btnChipPantalones"
+                style="@style/ChipOutlineButton"
+                android:text="Pantalones"
+                android:textColor="@android:color/white"
+                />
+            <Button
+                android:id="@+id/btnChipZapatillas"
+                style="@style/ChipOutlineButton"
+                android:text="Zapatillas"
+                android:textColor="@android:color/white"
+                />
+            <Button
+                android:id="@+id/btnChipSudaderas"
+                style="@style/ChipOutlineButton"
+                android:text="Sudaderas"
+                android:textColor="@android:color/white"
+                />
+            <Button
+                android:id="@+id/btnChipChaquetas"
+                style="@style/ChipOutlineButton"
+                android:text="Chaquetas"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Toda la ropa"
+            android:textColor="@color/primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnAbrirCrud"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:text="CRUD"
+            android:textAllCaps="false"
+            android:textColor="@color/accent" />
+
+        <Button
+            android:id="@+id/btnRecomendaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="Recomendaciones"
+            android:textAllCaps="false"
+            android:textColor="@color/accent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEmptyHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Todavía no hay productos"
+        android:textColor="#757575"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

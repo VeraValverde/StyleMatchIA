@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="IA"
+        android:textColor="@color/primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="Cuéntale a la IA lo que buscas"
+        android:textColor="@color/primary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Describe tu estilo, ocasión, colores que te gustan, marcas o temporada."
+        android:textColor="#767676"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etAiPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_input_rounded"
+        android:gravity="top|start"
+        android:hint="Ejemplo: Quiero ropa de verano blanca"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnAiBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_primary_button"
+        android:text="Buscar recomendaciones"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvAiResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primary"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvAiEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Las recomendaciones aparecerán aquí debajo."
+        android:textColor="#767676" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAiResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/view_bottom_nav" />
+</LinearLayout>

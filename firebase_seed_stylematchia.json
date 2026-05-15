@@ -1,0 +1,61 @@
+{
+  "productos": {
+    "hoodie_tech_fleece": {
+      "id": "hoodie_tech_fleece",
+      "nombre": "Hoodie Tech Fleece",
+      "marca": "Nike",
+      "descripcion": "Sudadera hoodie negra con capucha Nike Tech Fleece para un look comodo, moderno, casual y de invierno.",
+      "precio": 89.99,
+      "imagenUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/492a7364-6ea6-4a2d-b9f7-cd6d7747b5b0/M+NK+TF+HD+FZ+WR.png",
+      "enlaceTienda": "https://www.nike.com/es/"
+    },
+    "camisa_oxford": {
+      "id": "camisa_oxford",
+      "nombre": "Camisa Oxford",
+      "marca": "Zara",
+      "descripcion": "Camisa azul clara ligera para outfit elegante, formal, oficina o smart casual de primavera.",
+      "precio": 29.95,
+      "imagenUrl": "https://static.zara.net/assets/public/2f7d/6827/7cbc4c0bb0d6/2f2f2299d3bc/05584303403-e1/05584303403-e1.jpg?ts=1745230467248&w=824",
+      "enlaceTienda": "https://www.zara.com/es/"
+    },
+    "jeans_straight": {
+      "id": "jeans_straight",
+      "nombre": "Jeans Straight",
+      "marca": "Levi's",
+      "descripcion": "Pantalon vaquero jeans azul recto y comodo para el dia a dia y looks casuales.",
+      "precio": 59.99,
+      "imagenUrl": "https://lsco.scene7.com/is/image/lsco/A19590016-front-pdp?fmt=jpeg&qlt=70",
+      "enlaceTienda": "https://www.levi.com/ES/es_ES/"
+    },
+    "air_max": {
+      "id": "air_max",
+      "nombre": "Zapatillas Air Max",
+      "marca": "Nike",
+      "descripcion": "Zapatillas deportivas negras, comodas y urbanas para ropa sport y streetwear.",
+      "precio": 129.99,
+      "imagenUrl": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/efc4924f-4079-40cc-80e8-5aa635e34618/AIR+MAX+90.png",
+      "enlaceTienda": "https://www.nike.com/es/"
+    },
+    "cargo_bershka": {
+      "id": "cargo_bershka",
+      "nombre": "Pantalon Cargo",
+      "marca": "Bershka",
+      "descripcion": "Pantalon cargo verde relajado con bolsillos laterales y estilo urbano streetwear de otono.",
+      "precio": 29.99,
+      "imagenUrl": "https://static.bershka.net/assets/public/9dd0/e10d/352744c4b82a/4dc7f2361782/05341242505-a2o/05341242505-a2o.jpg?ts=1739268398347&w=850",
+      "enlaceTienda": "https://www.bershka.com/es/"
+    },
+    "camiseta_basic": {
+      "id": "camiseta_basic",
+      "nombre": "Camiseta Basic",
+      "marca": "Pull&Bear",
+      "descripcion": "Camiseta basica blanca barata, fresca y facil de combinar para verano.",
+      "precio": 12.99,
+      "imagenUrl": "https://static.pullandbear.net/assets/public/6c13/9eb1/9fd64e4ca0c1/11fb0656d8a1/03241331250-A6M/03241331250-A6M.jpg?ts=1747045149717&w=750&f=auto",
+      "enlaceTienda": "https://www.pullandbear.com/es/"
+    }
+  },
+  "usuarios": {},
+  "favoritos": {},
+  "recomendaciones": {}
+}
