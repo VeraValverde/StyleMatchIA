@@ -34,6 +34,14 @@ y borrar productos, ademas de revisar las recomendaciones enviadas por los usuar
 - OpenRouter
 - ImgBB
 
+## Como iniciar el proyecto
+
+1. Abrir el proyecto en Android Studio
+2. Tener Firebase configurado correctamente
+3. Colocar el archivo `google-services.json` dentro de la carpeta `app`
+4. Configurar la clave de OpenRouter si se quiere usar la recomendacion con IA
+5. Ejecutar la app en un emulador o en un dispositivo Android
+
 ## Ideas futuras de beneficios
 
 - Añadir anuncios para obtener beneficios
