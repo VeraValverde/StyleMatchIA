@@ -12,7 +12,6 @@ public class Producto implements Serializable {
     @PrimaryKey
     @NonNull
     private String id = "";
-
     private String nombre = "";
     private String marca = "";
     private String descripcion = "";

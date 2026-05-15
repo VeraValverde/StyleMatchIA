@@ -26,7 +26,7 @@ public class ProductMatcher {
             case "sudaderas":
                 return containsAny(text, "sudadera", "sudaderas", "hoodie", "capucha");
             case "chaquetas":
-                return containsAny(text, "chaqueta", "chaquetas", "cazadora", "abrigo");
+                return containsAny(text, "chaqueta", "chaquetas", "cazadora", "abrigo","chaqueton");
             default:
                 return text.contains(normalize(category));
         }
