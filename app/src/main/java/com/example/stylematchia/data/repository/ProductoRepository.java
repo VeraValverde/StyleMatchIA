@@ -4,7 +4,8 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.example.stylematchia.data.CatalogoDemo;
+import androidx.annotation.NonNull;
+
 import com.example.stylematchia.data.local.AppDatabase;
 import com.example.stylematchia.data.local.ProductoDao;
 import com.example.stylematchia.data.remote.FirebaseProductoRepository;
@@ -47,7 +48,7 @@ public class ProductoRepository {
         stopObserving();
         productosListener = new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot snapshot) {
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
                 List<Producto> remoteProducts = new ArrayList<>();
 
                 for (DataSnapshot item : snapshot.getChildren()) {
@@ -72,7 +73,7 @@ public class ProductoRepository {
             }
 
             @Override
-            public void onCancelled(DatabaseError error) {
+            public void onCancelled(@NonNull DatabaseError error) {
                 loadLocalProducts(callback);
             }
         };
@@ -93,17 +94,6 @@ public class ProductoRepository {
             productoDao.deleteById(producto.getId());
             firebaseRepository.deleteProduct(producto.getId());
             mainHandler.post(() -> callback.onComplete("Producto eliminado en Room y Firebase."));
-        });
-    }
-
-    public void seedDemoProducts(ActionCallback callback) {
-        executorService.execute(() -> {
-            List<Producto> productos = CatalogoDemo.crearCatalogoInicial();
-            productoDao.replaceAll(productos);
-            for (Producto producto : productos) {
-                firebaseRepository.saveProduct(producto);
-            }
-            mainHandler.post(() -> callback.onComplete("Catalogo demo cargado en Room y Firebase."));
         });
     }
 
