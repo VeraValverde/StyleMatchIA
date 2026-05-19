@@ -20,13 +20,13 @@ public class ProductMatcher {
             case "camisetas":
                 return containsAny(text, "camiseta", "camisetas", "top", "basica");
             case "pantalones":
-                return containsAny(text, "pantalon", "pantalones", "jeans", "vaquero", "cargo");
+                return containsAny(text, "pantalon", "pantalones", "jeans", "vaquero", "cargo", "chinos");
             case "zapatillas":
                 return containsAny(text, "zapatilla", "zapatillas", "deportivas", "calzado", "sneakers");
             case "sudaderas":
                 return containsAny(text, "sudadera", "sudaderas", "hoodie", "capucha");
             case "chaquetas":
-                return containsAny(text, "chaqueta", "chaquetas", "cazadora", "abrigo","chaqueton");
+                return containsAny(text, "chaqueta", "chaquetas", "cazadora", "abrigo","chaqueton","rebeca");
             default:
                 return text.contains(normalize(category));
         }
